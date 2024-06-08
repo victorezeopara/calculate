@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display"></div>
+        <div class="keys">
+            <div><button class="btn" data-action="clear" aria-placeholder="C">AC</button></div>
+            <div><button class="btn" data-action="sign">+/-</button></div>
+            <div><button class="btn" data-action="percent">%</button></div>
+            <div><button class="btn" data-action="operator" data-operator="/">&divide;</button></div>
+            <div><button class="btn" id="paint">7</button></div>
+            <div><button class="btn" id="paint">8</button></div>
+            <div><button class="btn" id="paint">9</button></div>
+            <div><button class="btn" data-action="operator" data-operator="*">&times;</button></div>
+            <div><button class="btn" id="paint">4</button></div>
+            <div><button class="btn" id="paint">5</button></div>
+            <div><button class="btn" id="paint">6</button></div>
+            <div><button class="btn" data-action="operator" data-operator="-">-</button></div>
+            <div><button class="btn" id="paint">1</button></div>
+            <div><button class="btn" id="paint">2</button></div>
+            <div><button class="btn" id="paint">3</button></div>
+            <div><button class="btn" data-action="operator" data-operator="+">+</button></div>
+            <div class="zero"><button class="btn" id="paint">0</button></div>
+            <div><button class="btn">.</button></div>
+            <div><button class="btn" data-action="calculate">=</button></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

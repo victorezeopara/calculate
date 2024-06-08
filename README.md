@@ -1,2 +1,2 @@
-# calculate
- a calculator
+# calculator
+used to calculate math values

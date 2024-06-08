@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f9;
+}
+
+.calculator {
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+}
+
+.display {
+    background: #333;
+    color: #fff;
+    text-align: right;
+    padding: 20px;
+    font-size: 2em;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+}
+
+.keys div {
+    background: #fff;
+}
+
+.keys div.zero {
+    grid-column: span 2;
+}
+
+.btn {
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    background: #0e010183;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ddd;
+}
+
+.btn[data-action="operator"] {
+    background: #FF8F00;
+    color: #fff;
+}
+
+.btn[data-action="operator"]:hover {
+    background: #ffca28;
+}
+
+.btn[data-action="clear"],
+.btn[data-action="sign"],
+.btn[data-action="percent"] {
+    background: #191410b7;
+    color: #fff;
+}
+
+.btn[data-action="clear"]:hover,
+.btn[data-action="sign"]:hover,
+.btn[data-action="percent"]:hover {
+    background: #ff8f00;
+}
+
+.btn[data-action="calculate"] {
+    background: #FF8F00;
+    color: #fff;
+}
+
+.btn[data-action="calculate"]:hover {
+    background: #ffca28;
+}
+
+
